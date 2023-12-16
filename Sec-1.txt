@@ -1,0 +1,8 @@
+1. IP Adress Check up:
+		https://www.nslookup.io/
+2. Submarine cables of Internet:
+		https://www.submarinecablemap.com/
+3. https://appbrewery.com/p/web-development-course-resources
+
+4. Typing Practice:
+	https://www.keybr.com/
