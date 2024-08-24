@@ -10,6 +10,8 @@ $y = 20;
 function test1() {
      global $x, $y;
 	 $y = $x + $y;
+
+     // $GLOBALS['y'] = $GLOBALS['x'] + $GLOBALS['y']; ----> Alternate
 } 
 
 test1(); // Execute Function
