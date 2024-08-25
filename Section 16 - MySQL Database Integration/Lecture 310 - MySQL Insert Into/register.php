@@ -13,7 +13,7 @@ function val($data) {
 
 $servername = "localhost";
 $username = "root";
-$password = "test2";
+$password = "";
 $dbname = "mywebsite";
 
 // Create connection
@@ -27,7 +27,8 @@ $sql = "INSERT INTO users (firstname, lastname, email)
 VALUES ('$fname', '$lname', '$email')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully. Record ID is: ";
+	$last_id = $conn->insert_id;
+    echo "New record created successfully. Record ID is: ". $last_id;
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
